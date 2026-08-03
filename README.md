@@ -11,7 +11,7 @@ Once Tailscale is installed and the invite is accepted, run the setup script bel
 
 ---
 
-## 🟢 Installation
+## Installation
 
 <details>
 <summary><b>Windows — click to expand</b></summary>
@@ -46,14 +46,17 @@ rho:25565
 
 You're done! In Minecraft, add the server as:
 ```
+rho
+```
+or
+```
 rho:25565
 ```
-
 </details>
 
 ---
 
-## 🔴 Uninstallation
+## Uninstallation
 
 If you ever want to remove the shortcut (e.g. you're done playing on this server):
 
@@ -80,10 +83,10 @@ If you ever want to remove the shortcut (e.g. you're done playing on this server
 
 ## What do these scripts actually do?
 
-They add one line to a system file on your computer (called the "hosts file") that tells your computer "when someone types `rho`, connect to this specific address." It only works for reaching this one server, and only while you're connected to Tailscale — it doesn't give access to anything else or change any other settings. The uninstall script just removes that one line.
+They add one line to a sys file on your computer that makes `rho` resolvable without a DNS. It only works for reaching this one server, and only while you're connected to Tailscale — it doesn't do anything else. The uninstall script just removes that one line.
 
 ## Troubleshooting
 
 - **"rho" doesn't connect:** make sure Tailscale is running (check for the icon in your system tray / menu bar) and that you're actually online.
 - **Windows SmartScreen warning:** click "More info" → "Run anyway" — this happens because the script isn't a paid/signed publisher, not because anything is wrong.
-- **Still stuck?** Just ask in the group chat — happy to help debug directly.
+- **Doesn't work?** DM `regeq` on discord or create an issue on github
