@@ -16,14 +16,21 @@ Once Tailscale is installed and the invite is accepted, run the setup script bel
 <details>
 <summary><b>Windows — click to expand</b></summary>
 
-1. Make sure [Tailscale](https://tailscale.com/download) is installed and you've accepted the share invite.
-2. Download [`setup-rho.bat`](scripts/setup-rho.bat) (right-click → *Save link as...*).
-3. Double-click the downloaded file.
-4. Click **"Yes"** when Windows asks for permission (this is normal — it needs to edit a system file).
-   - If you see a blue "Windows protected your PC" screen, click **"More info"** → **"Run anyway"**.
-5. A popup will confirm it worked.
+[![Download for Windows](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows)](https://raw.githubusercontent.com/yourname/your-repo-name/main/scripts/setup-rho.bat)
 
-You're done! In Minecraft, add the server as:
+
+1. Make sure Tailscale is installed and you've accepted the share invite.
+2. Download setup-rho.bat (right-click → Save link as...).
+3. Double-click the downloaded file.
+4. Click "Yes" when Windows asks for permission (this is normal — it needs to edit a system file).
+5. If you see a blue "Windows protected your PC" screen, click "More info" → "Run anyway".
+6. A popup will confirm it worked and show you the address it set up.
+
+In Minecraft, add the server as:
+```
+rho
+```
+or
 ```
 rho:25565
 ```
@@ -33,24 +40,26 @@ rho:25565
 <details>
 <summary><b>Mac — click to expand</b></summary>
 
-1. Make sure [Tailscale](https://tailscale.com/download) is installed and you've accepted the share invite.
-2. Download [`setup-rho.command`](scripts/setup-rho.command) (right-click → *Save Link As...*).
-3. **First time only:** open Terminal and run this once so Mac allows it to run:
-   ```
+[![Download for Mac](https://img.shields.io/badge/Download-Mac-black?style=for-the-badge&logo=apple)](https://raw.githubusercontent.com/yourname/your-repo-name/main/scripts/setup-rho.command)
+
+Make sure Tailscale is installed and you've accepted the share invite.
+Download setup-rho.command (right-click → Save Link As...).
+First time only: open Terminal and run this once so Mac allows it to run:
+```
    chmod +x ~/Downloads/setup-rho.command
-   ```
-   *(If this step feels intimidating, just ask whoever shared the server with you to send you a version you can double-click directly — Mac requires this one-time permission step for downloaded scripts.)*
-4. Double-click `setup-rho.command`.
-5. Enter your Mac password when asked (this is normal, it's just confirming it's really you).
-6. A popup will confirm it worked.
+```
+**(If you don't know what you are doing (or don't trust yourself) then ask whoever shared the server with you to help you or don't do it)**
+4. Double-click setup-rho.command. 
+5. Enter your Mac password when asked (this is normal, it's just confirming it's really you). 
+6. A popup will confirm it worked and show you the address it set up.
 
 You're done! In Minecraft, add the server as:
 ```
-rho
+   rho
 ```
 or
 ```
-rho:25565
+   rho:25565
 ```
 </details>
 
@@ -63,8 +72,11 @@ If you ever want to remove the shortcut (e.g. you're done playing on this server
 <details>
 <summary><b>Windows — click to expand</b></summary>
 
-1. Download [`uninstall-rho.bat`](scripts/uninstall-rho.bat).
-2. Double-click it, click **"Yes"** on the permission prompt.
+[![Download for Windows](https://img.shields.io/badge/Download-Windows-blue?style=for-the-badge&logo=windows)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/uninstall-rho.bat)
+
+
+1. Download uninstall-rho.bat.
+2. Double-click it, click "Yes" on the permission prompt.
 3. A popup will confirm removal.
 
 </details>
@@ -72,8 +84,10 @@ If you ever want to remove the shortcut (e.g. you're done playing on this server
 <details>
 <summary><b>Mac — click to expand</b></summary>
 
-1. Download [`uninstall-rho.command`](scripts/uninstall-rho.command).
-2. Double-click it (run `chmod +x` on it first if it won't open, same as installation step 3).
+[![Download for Mac](https://img.shields.io/badge/Download-Mac-black?style=for-the-badge&logo=apple)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/uninstall-rho.command)
+
+1. Download uninstall-rho.command.
+2. Double-click it (run chmod +x on it first if it won't open, same as installation step 3).
 3. Enter your Mac password when asked.
 4. A popup will confirm removal.
 
