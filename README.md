@@ -16,7 +16,8 @@ Once Tailscale is installed and the invite is accepted, run the setup script bel
 <details>
 <summary><b>Windows — click to expand</b></summary>
 
-[![Download for Windows](https://img.shields.io/badge/Windows-Download-black?style=plastic&logo=windows)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/setup-rho.bat)
+
+[![Download for Windows](https://img.shields.io/badge/Windows-Download-black?style=flat&logo=windows)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/setup-rho.bat)
 
 
 1. Make sure Tailscale is installed and you've accepted the share invite.
@@ -73,7 +74,7 @@ If you ever want to remove the shortcut (e.g. you're done playing on this server
 <details>
 <summary><b>Windows — click to expand</b></summary>
 
-[![Download for Windows](https://img.shields.io/badge/Windows-Download-black?style=plasticlogo=windows)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/uninstall-rho.bat)
+[![Download for Windows](https://img.shields.io/badge/Windows-Download-black?style=flat&logo=windows)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/uninstall-rho.bat)
 
 
 1. Download uninstall-rho.bat.
