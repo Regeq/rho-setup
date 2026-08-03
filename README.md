@@ -16,7 +16,7 @@ Once Tailscale is installed and the invite is accepted, run the setup script bel
 <details>
 <summary><b>Windows — click to expand</b></summary>
 
-[![Download for Windows](https://img.shields.io/badge/Windows-Download-blue?style=plastic&logo=windows)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/setup-rho.bat)
+[![Download for Windows](https://img.shields.io/badge/Windows-Download-black?style=plastic&logo=windows)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/setup-rho.bat)
 
 
 1. Make sure Tailscale is installed and you've accepted the share invite.
@@ -40,7 +40,7 @@ rho:25565
 <details>
 <summary><b>Mac — click to expand</b></summary>
 
-[![Download for Mac](https://img.shields.io/badge/Apple-Download-blue?style=flat&logo=apple
+[![Download for Mac](https://img.shields.io/badge/Apple-Download-black?style=flat&logo=apple
 )](https://raw.githubusercontent.com/yourname/your-repo-name/main/scripts/setup-rho.command)
 
 Make sure Tailscale is installed and you've accepted the share invite.
@@ -73,7 +73,7 @@ If you ever want to remove the shortcut (e.g. you're done playing on this server
 <details>
 <summary><b>Windows — click to expand</b></summary>
 
-[![Download for Windows](https://img.shields.io/badge/Windows-Download-blue?style=plasticlogo=windows)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/uninstall-rho.bat)
+[![Download for Windows](https://img.shields.io/badge/Windows-Download-black?style=plasticlogo=windows)](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/uninstall-rho.bat)
 
 
 1. Download uninstall-rho.bat.
@@ -85,7 +85,7 @@ If you ever want to remove the shortcut (e.g. you're done playing on this server
 <details>
 <summary><b>Mac — click to expand</b></summary>
 
-[![Download for Mac](https://img.shields.io/badge/Apple-Download-blue?style=flat&logo=apple
+[![Download for Mac](https://img.shields.io/badge/Apple-Download-black?style=flat&logo=apple
 )](https://raw.githubusercontent.com/Regeq/rho-setup/main/scripts/uninstall-rho.command)
 
 1. Download uninstall-rho.command.
