@@ -69,7 +69,7 @@ or
 
 ## Uninstallation
 
-If you ever want to remove the shortcut (e.g. you're done playing on this server):
+If you ever feel like deleting the shortcut and the client:
 
 <details>
 <summary><b>Windows — click to expand</b></summary>
@@ -100,7 +100,9 @@ If you ever want to remove the shortcut (e.g. you're done playing on this server
 
 ## What do these scripts actually do?
 
-They add one line to a sys file on your computer that makes `rho` resolvable without a DNS. It only works for reaching this one server, and only while you're connected to Tailscale — it doesn't do anything else. The uninstall script just removes that one line.
+Install scripts download Tailscale client and add one line to a sys file on your computer that makes `rho` resolvable without a DNS. It only works for reaching this one server, and only while you're connected to Tailscale, it doesn't do anything else. The uninstall script just removes that one line.
+
+Uninstall scripts delete entire Tailscale client and revert changes done to system. 
 
 ## Troubleshooting
 
