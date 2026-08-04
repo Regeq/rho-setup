@@ -7,7 +7,7 @@ This repo has everything you need to connect to the Minecraft server, plus one-c
 - **Server address:** `rho:25565`
 - **Requires:** [Tailscale](https://tailscale.com/download) installed and network connection
 
-Once Tailscale is installed and the invite is accepted, run the setup script below **once** — after that, you can just type `rho` as the server address in Minecraft, forever.
+Once the script is ran, it will download Tailscale and allow user for an semiautomated access to the server. After that, you can just type `rho` as the server address in Minecraft, forever.
 
 ---
 
