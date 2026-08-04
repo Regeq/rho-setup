@@ -1,20 +1,20 @@
 @echo off
-:: Self-elevate if not already running as admin
 net session >nul 2>&1
 if %errorLevel% neq 0 (
     powershell -WindowStyle Hidden -Command "Start-Process '%~f0' -Verb RunAs"
     exit /b
 )
 
+echo Removing hosts file entry...
 set HOSTS_FILE=%SystemRoot%\System32\drivers\etc\hosts
-set TEMP_FILE=%SystemRoot%\System32\drivers\etc\hosts.tmp
+findstr /V /C:"rho" "%HOSTS_FILE%" > "%HOSTS_FILE%.tmp"
+move /Y "%HOSTS_FILE%.tmp" "%HOSTS_FILE%" >nul
+ipconfig /flushdns >nul
 
-findstr /C:"rho" "%HOSTS_FILE%" >nul
-if %errorlevel%==0 (
-    findstr /V /C:"rho" "%HOSTS_FILE%" > "%TEMP_FILE%"
-    move /Y "%TEMP_FILE%" "%HOSTS_FILE%" >nul
-    ipconfig /flushdns >nul
-    powershell -sta -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Removed! The server shortcut has been uninstalled.','Server Uninstall',0,64)"
-) else (
-    powershell -sta -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Nothing to remove - it was not set up on this computer.','Server Uninstall',0,64)"
-)
+echo Logging out of Tailscale...
+"C:\Program Files\Tailscale\tailscale.exe" logout >nul 2>&1
+
+echo Uninstalling Tailscale...
+winget uninstall --id Tailscale.Tailscale -e --silent
+
+powershell -sta -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('All removed:' + [Environment]::NewLine + '- rho shortcut deleted' + [Environment]::NewLine + '- Logged out of Tailscale' + [Environment]::NewLine + '- Tailscale uninstalled','Uninstall Complete',0,64)"
